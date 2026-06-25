@@ -1,0 +1,25 @@
+[project]
+name = "diaglux"
+version = "0.1.0"
+description = "DiagLux-RAG: Evaluating Retrieval-Augmented Generation for Luxembourgish Reading Comprehension"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+retrieval = ["bm25s", "sentence-transformers"]
+llm = ["openai", "anthropic"]
+analysis = ["pandas", "scipy", "statsmodels", "matplotlib"]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

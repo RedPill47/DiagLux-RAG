@@ -1,0 +1,34 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store
+
+# dense-retrieval side environment (Python 3.12 + torch; see docs/CONTRACTS.md)
+.venv-dense/
+
+# run artifacts (regenerable from scripts; outputs/processed/ is a tracked deliverable)
+outputs/runs/
+outputs/retrieval/
+outputs/analysis/
+.env
+
+# local agent/IDE config (not part of the project)
+.claude/
+.github/agents/
+
+# LaTeLL paper draft (kept out of the code repo)
+DiagLux_RAG_LaTeLL_2026/
+
+# internal planning docs (kept local, not for the public repo)
+DiagLux_RAG_review_and_plan.md
+docs/changes_from_concept.md
+docs/DiagLux_RAG_share.pdf
+docs/rag_grid_plan.md
+
+# paper-build artifacts (kept local, belong with the paper not the code repo)
+outputs/figures/
+docs/paper_tables.tex
+docs/cross_text_matrix.tex
+scripts/make_paper_artifacts.py
+scripts/make_cross_text_matrix.py
