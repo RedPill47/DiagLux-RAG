@@ -273,3 +273,14 @@ python -m pytest -q          # 197 tests, no network, no real API calls
 - Analysis: full cross-model tables generated (accuracy with CIs, McNemar, confusion,
   retrieval-trap, 2x2) in `outputs/analysis/`.
 - Paper: complete.
+
+---
+
+## 8. License
+
+The code in this repository is released under the MIT License (see `LICENSE`).
+
+The LuxDiagRC dataset (the source texts, questions, and annotations under `dataset/`, and the
+derived files in `outputs/processed/`) is the work of the LuxDiagRC authors and remains subject to
+its own terms; see the original release at [Konsalian/LuxDiagRC](https://github.com/Konsalian/LuxDiagRC).
+Please cite LuxDiagRC if you use it.
